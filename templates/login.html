@@ -1,0 +1,42 @@
+
+{% extends 'common.html' %}
+
+    {% load static %}
+
+    {% block css %}
+        
+        <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
+    {% endblock %}
+
+    {% block title %}
+        <h2 class="top-title">Menu</h2>
+        <h3 class="title">Jibon</h3>
+        <h4 class="sub-title"></h4>
+    {% endblock %}
+    
+    {% block content %}
+    <section>
+<div id="content">
+            <h2>Đăng nhập</h2>
+            <table border="1">
+                <tr>
+                    <td>Tên đăng nhập</td>
+                    <td>
+                        <input class="mytexbox" type="text" name="TenDangNhap" required maxlength="20" placeholder="Nhập tên đăng nhập" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Mật khẩu</td>
+                    <td>
+                        <input class="mytextbox" type="password" name="Matkhau" required maxlength="50" placeholder="Mật khẩu" />
+                    </td>
+                </tr>
+                    <td colspan="2" style="text-align: center;">
+                        <button type="Dangnhap">Đăng nhập</button>
+                        <a href="{% url 'dangki' %}"><button type="Dangki">Đăng ký</button></a>
+                        </td>
+                        </table>
+</div>
+</section>
+{% endblock %}

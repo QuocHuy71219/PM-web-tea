@@ -1,0 +1,15 @@
+#content {
+    background-color: pink;
+    min-height: 200px;
+    width: 1350px;
+    float: left;
+    padding: 5px;
+    text-align: center;
+}
+
+table {
+    margin: 0 auto;
+    min-height: 150px;
+    min-width: 50px;
+    /*lề ngoài*/
+}
